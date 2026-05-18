@@ -19,7 +19,7 @@ header {
     padding: 1rem;
 }
 
-header img {
+header img, footer img {
     width: min(300px, 100%);
 }
 
@@ -46,16 +46,6 @@ header img {
 
 .img-links img{
     width: 16px;
-}
-
-@media (max-width: 720px){
-    header{
-        flex-direction: column;
-    }
-
-    .h-text {
-        width: 90%;
-    }
 }
 
 main h2{
@@ -96,3 +86,74 @@ main{
     width: 14px;
 }
 
+footer{
+    margin-top: 2rem;
+    min-height: 30vh;
+    background-color: var(--background-color);
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.location {
+    margin: .3rem;
+}
+
+.asrc{
+    display: flex;
+    align-items: center;
+}
+
+.asrc a{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.asrc img {
+    filter: brightness(0) invert(1);
+}
+
+.info img {
+    width: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-links{
+    display: flex;
+    justify-content: left;
+    gap: 4rem;
+    margin: 1rem 0;
+}
+
+.footer-links img{
+    width: 20px;
+}
+
+
+
+
+
+@media (max-width: 720px){
+    header{
+        flex-direction: column;
+    }
+
+    .h-text {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+
+}
