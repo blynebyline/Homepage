@@ -1,0 +1,98 @@
+:root{
+    --background-color: #0891B2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header img {
+    width: min(300px, 100%);
+}
+
+.h-text{
+    max-width: 600px;
+    width: 100%;
+    margin: 12px;
+    background-color: white;
+    text-align: left;
+    padding: 6px;
+}
+
+.h-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgb(66, 66, 66);
+}
+
+.img-links{
+    display: flex;
+    justify-content: right;
+    gap: 8px;
+}
+
+.img-links img{
+    width: 16px;
+}
+
+@media (max-width: 720px){
+    header{
+        flex-direction: column;
+    }
+
+    .h-text {
+        width: 90%;
+    }
+}
+
+main h2{
+    margin: 12px;
+}
+
+main{
+    padding: 0 2rem;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project{
+    border: 1px solid black;
+}
+
+.project img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.project p {
+    padding: 0 0.5rem;
+}
+
+
+.project-title img{
+    width: 14px;
+}
+
